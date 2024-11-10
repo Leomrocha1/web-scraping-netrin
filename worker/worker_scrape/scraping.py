@@ -13,7 +13,7 @@ def criar_driver():
     firefox_options = Options()
     firefox_options.add_argument('--headless')
     service = Service('/usr/local/bin/geckodriver')
-    driver = webdriver.Chrome(service=service, options=firefox_options)
+    driver = webdriver.Firefox(service=service, options=firefox_options)
     return driver
 
 def execute_scrape(cnpj):
@@ -74,6 +74,3 @@ def extract_data(html):
     }
     
     return cnpj_data
-
-
-
