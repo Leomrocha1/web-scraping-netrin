@@ -11,6 +11,11 @@ Projeto para realizar web scraping e coletar dados de sites específicos usando 
 - **Python 3.8+**
 - **Docker**
 
+### Documentacao API
+1. Disponível em:
+    ```bash
+    http://localhost:8000/docs
+
 ## Instalação e uso do projeto (Docker)
 1. Clone o repositório:
    ```bash
