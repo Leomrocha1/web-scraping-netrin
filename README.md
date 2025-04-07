@@ -50,3 +50,14 @@ Projeto para realizar web scraping e coletar dados de sites específicos usando 
     ###WORKER### Com o passo 3 completo.
     cd worker
     python worker.py
+
+
+### 🔄 Rotas da API
+
+| Método | Rota                        | Descrição                                              |
+|--------|-----------------------------|--------------------------------------------------------|
+| GET    | `/health`                   | Verifica se a API está online                          |
+| GET    | `/clients/active`           | Lista os clientes ativos que estão sendo monitorados   |
+| GET    | `/clients/{client_id}`      | Retorna os dados de consumo de um cliente específico   |
+| POST   | `/alerts/send`              | Envia manualmente um alerta por e-mail                 |
+| GET    | `/metrics`                  | Exibe métricas de uso/consumo dos clientes             |
