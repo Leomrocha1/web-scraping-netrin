@@ -52,12 +52,9 @@ Projeto para realizar web scraping e coletar dados de sites específicos usando 
     python worker.py
 
 
-### 🔄 Rotas da API
-
-| Método | Rota                        | Descrição                                              |
-|--------|-----------------------------|--------------------------------------------------------|
-| GET    | `/health`                   | Verifica se a API está online                          |
-| GET    | `/clients/active`           | Lista os clientes ativos que estão sendo monitorados   |
-| GET    | `/clients/{client_id}`      | Retorna os dados de consumo de um cliente específico   |
-| POST   | `/alerts/send`              | Envia manualmente um alerta por e-mail                 |
-| GET    | `/metrics`                  | Exibe métricas de uso/consumo dos clientes             |
+## Rotas disponíveis
+| Método | Rota                                            | Descrição                                              |
+|--------|-------------------------------------------------|--------------------------------------------------------|
+| GET    | `/v1/status`                                    | Healthcheck                                            |
+| GET    | `/api/v1/monitoring/seasonality`                | Verifica o consumo diário dos clientes e notifica CS com o consumo acima do esperado   |
+| GET    | `/api/v1/monitoring/repeat/{time}/{count}`      | Verifica se há cosultas repetidas e notifica CS com as consultas repetidas   |
